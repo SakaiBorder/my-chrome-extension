@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Quick Search",
+    "description": "Google Search for highlighted text",
+    "version": "0.0.1",
+    "author": "border",
+    
+    "browser_action": {
+        "default_title": "Quick Search",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "exclude_matches": [
+                "https://docs.google.com/*",
+                "https://office.live.com/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "/assets/js/contentScript.js"
+            ]
+        }
+    ]
+}

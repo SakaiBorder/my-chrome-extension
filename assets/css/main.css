@@ -1,0 +1,18 @@
+html, body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+input{
+    color: transparent;
+    text-shadow: 0 0 0 red;
+}
+input: focus {
+    outline: none;
+}
+.done {
+    visibility: hidden;
+}
+.done.show {
+    visibility: visible;
+}
