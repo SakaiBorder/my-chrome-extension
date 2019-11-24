@@ -17,7 +17,8 @@
             "matches": ["<all_urls>"],
             "exclude_matches": [
                 "https://docs.google.com/*",
-                "https://office.live.com/*"
+                "https://office.live.com/*",
+                "https://paiza.jp/*"
             ],
             "run_at": "document_idle",
             "js": [
