@@ -6,8 +6,7 @@
     "author": "border",
     
     "browser_action": {
-        "default_title": "Quick Search",
-        "default_popup": "popup.html"
+        "default_title": "Quick Search"
     },
     "permissions": [
         "storage"
